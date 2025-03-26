@@ -14,7 +14,7 @@ const About = () => {
 
         <div className="flex justify-center items-center">
           <img
-            src="https://source.unsplash.com/400x250/?shopping,clothes"
+            src="https://images.meesho.com/images/products/512316453/n5dad_400.webp"
             alt="Shopping"
             className="rounded-lg shadow-md"
           />
