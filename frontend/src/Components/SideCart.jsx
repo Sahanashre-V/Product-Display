@@ -2,16 +2,16 @@ import React from "react";
 import { FaTimes, FaTrash } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 
-const CartSidebar = ({ isOpen, onClose }) => {
-  const { cart, removeFromCart, updateQuantity, getTotalPrice } = useCart();
+const CartSidebar = () => {
+  const { cart, removeFromCart, updateQuantity, getTotalPrice, isCartOpen, setIsCartOpen } = useCart();
 
   return (
     <>
       {/* Sidebar */}
       <div className={`fixed top-0 right-0 h-full w-96 bg-white shadow-lg z-50 transform transition-transform duration-300 
-                     ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+                     ${isCartOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close Button */}
-        <button className="absolute top-3 right-3 text-gray-600 hover:text-red-500 cursor-pointer" onClick={onClose}>
+        <button className="absolute top-3 right-3 text-gray-600 hover:text-red-500 cursor-pointer" onClick={() => setIsCartOpen(false)}>
           <FaTimes size={20} />
         </button>
 
@@ -30,10 +30,10 @@ const CartSidebar = ({ isOpen, onClose }) => {
                   <p className="text-xs text-gray-600">${Number(item.price).toFixed(2)} x {item.quantity}</p>
                   <p className="text-sm font-bold text-green-600">${(Number(item.price) * item.quantity).toFixed(2)}</p>
                 </div>
-                <div className="flex flex-col items-center">
-                  <button onClick={() => updateQuantity(item.id, 1)} className="text-green-600 text-lg">+</button>
-                  <button onClick={() => updateQuantity(item.id, -1)} className="text-red-600 text-lg">-</button>
-                  <button onClick={() => removeFromCart(item.id)} className="text-red-500 mt-2">
+                <div className="flex items-center gap-2">
+                  <button onClick={() => updateQuantity(item.id, 1)} className="text-green-600 text-xl px-2">+</button>
+                  <button onClick={() => updateQuantity(item.id, -1)} className="text-red-600 text-xl px-2">-</button>
+                  <button onClick={() => removeFromCart(item.id)} className="text-red-500">
                     <FaTrash size={18} />
                   </button>
                 </div>

@@ -1,59 +1,59 @@
 [
     {
       "id": 1,
-      "name": "Fjallraven - No. 1 Backpack",
-      "brand": "Fjallraven",
+      "name": "Kurta with Dupatta",
+      "brand": "EthnicWear",
       "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest.",
-      "category": ["men's clothing", "backpacks"],
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "description": "Elegant kurta set with a beautifully designed dupatta, perfect for festive occasions.",
+      "category": ["women's clothing", "ethnic wear"],
+      "image": "https://images.meesho.com/images/products/367771840/2epjo_512.webp",
       "reviews": [
         { "rating": 3.9, "count": 120, "review": "Good quality but a bit expensive." },
-        { "rating": 4.5, "count": 30, "review": "Love the design and durability!" }
+        { "rating": 4.5, "count": 30, "review": "Love the design and fabric!" }
       ]
     },
     {
-        "id": 2,
-        "name": "Pierced Owl Rose Gold Plated Earrings",
-        "brand": "Pierced Owl",
-        "price": 10.99,
-        "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings.",
-        "category": ["jewelry", "earrings"],
-        "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-        "reviews": [
-          { "rating": 1.9, "count": 100, "review": "Not very durable, color fades quickly." }
-        ]
-      },
+      "id": 2,
+      "name": "Makeup Combo",
+      "brand": "BeautyGlow",
+      "price": 10.99,
+      "description": "A complete makeup combo to enhance your beauty effortlessly.",
+      "category": ["beauty", "makeup"],
+      "image": "https://images.meesho.com/images/products/45022851/0nik5_400.webp",
+      "reviews": [
+        { "rating": 1.9, "count": 100, "review": "Not very durable, color fades quickly." }
+      ]
+    },
     {
-        "id": 3,
-        "name": "Solid Gold Petite Micropave Ring",
-        "brand": "Hafeez Center",
-        "price": 168,
-        "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-        "category": ["jewelry", "rings"],
-        "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-        "reviews": [
-          { "rating": 3.9, "count": 70, "review": "Looks great but a bit overpriced." }
-        ]
-      },
+      "id": 3,
+      "name": "Rayon Kurtis",
+      "brand": "TrendyStyle",
+      "price": 168,
+      "description": "Comfortable and stylish rayon kurtis, perfect for daily wear.",
+      "category": ["women's clothing", "kurtis"],
+      "image": "https://images.meesho.com/images/products/79962278/7dpnj_512.webp",
+      "reviews": [
+        { "rating": 3.9, "count": 70, "review": "Looks great but a bit overpriced." }
+      ]
+    },
     {
       "id": 4,
-      "name": "Mens Casual Slim Fit",
+      "name": "Anarkali Dress",
       "brand": "FashionTrend",
       "price": 15.99,
-      "description": "Body builds vary, so please review the size information below before purchase.",
-      "category": ["men's clothing", "casual wear"],
-      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "description": "Beautiful Anarkali dress with intricate embroidery for special occasions.",
+      "category": ["women's clothing", "ethnic wear"],
+      "image": "https://images.meesho.com/images/products/350829722/0jqvy_400.webp",
       "reviews": [
         { "rating": 2.1, "count": 430, "review": "Material is not as expected." }
       ]
     },
     {
       "id": 5,
-      "name": "John Hardy Women's Legends Naga Bracelet",
-      "brand": "John Hardy",
+      "name": "Women's Designer Bracelet",
+      "brand": "JewelsElite",
       "price": 695,
-      "description": "Inspired by the mythical water dragon, this bracelet symbolizes protection and love.",
+      "description": "Elegant and stylish designer bracelet, a perfect addition to your jewelry collection.",
       "category": ["jewelry", "bracelets"],
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
       "reviews": [
@@ -61,24 +61,24 @@
       ]
     },
     {
-        "id": 6,
-        "name": "Mens Cotton Jacket",
-        "brand": "OutdoorGear",
-        "price": 55.99,
-        "description": "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions such as hiking, camping, cycling, and more.",
-        "category": ["men's clothing", "jackets"],
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        "reviews": [
-          { "rating": 4.7, "count": 500, "review": "Warm and stylish! Perfect for winter." },
-          { "rating": 4.3, "count": 150, "review": "Good quality but a bit heavy." }
-        ]
-      },
+      "id": 6,
+      "name": "Maxi Dress",
+      "brand": "ChicWear",
+      "price": 55.99,
+      "description": "Flowy and fashionable maxi dress for a stylish look.",
+      "category": ["women's clothing", "dresses"],
+      "image": "https://images.meesho.com/images/products/444787015/qxorv_400.webp",
+      "reviews": [
+        { "rating": 4.7, "count": 500, "review": "Stylish and comfortable, great for summer." },
+        { "rating": 4.3, "count": 150, "review": "Good quality but a bit heavy." }
+      ]
+    },
     {
       "id": 7,
-      "name": "White Gold Plated Princess Ring",
+      "name": "White Gold Plated Ring",
       "brand": "DiamondCraft",
       "price": 9.99,
-      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring.",
+      "description": "Classic engagement-style ring with a white gold finish.",
       "category": ["jewelry", "rings"],
       "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
       "reviews": [
@@ -86,39 +86,39 @@
       ]
     },
     {
-        "id": 8,
-        "name": "WD 2TB Elements Portable External Hard Drive",
-        "brand": "Western Digital",
-        "price": 64,
-        "description": "USB 3.0 and USB 2.0 Compatibility, Fast data transfers, and High Capacity.",
-        "category": ["electronics", "storage"],
-        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-        "reviews": [
-          { "rating": 3.3, "count": 203, "review": "Good storage but a bit slow." }
-        ]
-      },
+      "id": 8,
+      "name": "Jumpsuit",
+      "brand": "WesternWear",
+      "price": 64,
+      "description": "Trendy jumpsuit designed for casual outings and special occasions.",
+      "category": ["women's clothing", "jumpsuits"],
+      "image": "https://images.meesho.com/images/products/495059982/bxaoq_512.webp",
+      "reviews": [
+        { "rating": 3.3, "count": 203, "review": "Stylish but fitting could be better." }
+      ]
+    },
     {
-        "id": 9,
-        "name": "Mens Casual Premium Slim Fit T-Shirt",
-        "brand": "CasualWear",
-        "price": 22.3,
-        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, lightweight & soft fabric.",
-        "category": ["men's clothing", "t-shirts"],
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        "reviews": [
-          { "rating": 4.1, "count": 259, "review": "Very comfortable and fits well." }
-        ]
-      },
+      "id": 9,
+      "name": "Slim Fit T-Shirt",
+      "brand": "CasualWear",
+      "price": 22.3,
+      "description": "Comfortable and trendy slim-fit t-shirt for everyday wear.",
+      "category": ["women's clothing", "t-shirts"],
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "reviews": [
+        { "rating": 4.1, "count": 259, "review": "Very comfortable and fits well." }
+      ]
+    },
     {
       "id": 10,
-      "name": "SanDisk SSD PLUS 1TB Internal SSD",
-      "brand": "SanDisk",
+      "name": "Fancy Eyelashes",
+      "brand": "GlamUp",
       "price": 109,
-      "description": "Easy upgrade for faster boot up, shutdown, application load, and response.",
-      "category": ["electronics", "storage"],
-      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "description": "Natural-looking, lightweight false eyelashes for a glamorous look.",
+      "category": ["beauty", "eyelashes"],
+      "image": "https://images.meesho.com/images/products/66552472/trxjl_400.webp",
       "reviews": [
-        { "rating": 2.9, "count": 470, "review": "Works well but could be faster." }
+        { "rating": 2.9, "count": 470, "review": "Decent quality but could last longer." }
       ]
     }
   ]

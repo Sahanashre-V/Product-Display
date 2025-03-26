@@ -4,9 +4,15 @@ import { FaShoppingBag, FaTimes, FaStar } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 
 const ProductDetail = ({ product, isOpen, onClose }) => {
-  const { addToCart } = useCart(); 
+  const { addToCart } = useCart();
 
   if (!product) return null;
+
+  // Calculate average rating
+  const totalReviews = product.reviews.length;
+  const averageRating = (
+    product.reviews.reduce((sum, review) => sum + review.rating, 0) / totalReviews
+  ).toFixed(1);
 
   return (
     <Modal
@@ -17,41 +23,55 @@ const ProductDetail = ({ product, isOpen, onClose }) => {
     >
       <div className="bg-white p-6 rounded-md shadow-md w-96 relative pointer-events-auto">
         {/* Close Button */}
-        <button className="absolute top-3 right-3 text-gray-600 hover:text-red-500 cursor-pointer" onClick={onClose}>
+        <button
+          className="absolute top-3 right-3 text-gray-600 hover:text-red-500 cursor-pointer"
+          onClick={onClose}
+        >
           <FaTimes size={20} />
         </button>
 
         {/* Product Image */}
-        <img src={product.image} alt={product.name} className="w-32 h-32 object-cover mx-auto rounded-lg mb-4" />
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-32 h-32 object-cover mx-auto rounded-lg mb-4"
+        />
 
         {/* Product Name */}
-        <h2 className="text-xl font-bold text-blue-800 text-center mb-2">{product.name}</h2>
+        <h2 className="text-xl font-bold text-blue-800 text-center mb-2">
+          {product.name}
+        </h2>
 
         {/* Brand & Description */}
         <p className="text-gray-600 font-medium text-center">{product.brand}</p>
         <p className="text-gray-700 mt-2 text-center">{product.description}</p>
 
         {/* Price */}
-        <p className="text-lg font-bold text-green-600 mt-3 text-center">${product.price}</p>
+        <p className="text-lg font-bold text-green-600 mt-3 text-center">
+          ${product.price}
+        </p>
 
         {/* Reviews Section */}
-        <div className="mt-4">
-          <h3 className="text-md font-semibold text-gray-700">Customer Reviews:</h3>
-          {product.reviews && product.reviews.length > 0 ? (
-            product.reviews.map((review, index) => (
-              <div key={index} className="bg-gray-300 p-3 rounded-lg shadow-sm mt-2">
-                <p className="text-sm text-gray-800 font-medium">{review.review}</p>
-                <div className="flex items-center mt-1">
-                  {[...Array(Math.round(review.rating))].map((_, i) => (
-                    <FaStar key={i} className="text-yellow-500" />
+        <div className="mt-4 border-t pt-3">
+          {/* Average Rating */}
+          <div className="flex items-center justify-center gap-2 text-yellow-500 font-bold text-lg">
+            <FaStar />
+            {averageRating} / 5 ({totalReviews} reviews)
+          </div>
+
+          {/* Individual Reviews */}
+          <div className="mt-3 max-h-40 overflow-y-auto">
+            {product.reviews.map((review, index) => (
+              <div key={index} className="border-b py-2">
+                <div className="flex items-center gap-1 text-yellow-500">
+                  {Array.from({ length: Math.round(review.rating) }).map((_, i) => (
+                    <FaStar key={i} />
                   ))}
-                  <span className="text-gray-600 text-sm ml-2">({review.rating.toFixed(1)})</span>
                 </div>
+                <p className="text-gray-600 text-sm">{review.review}</p>
               </div>
-            ))
-          ) : (
-            <p className="text-gray-500 text-sm">No reviews yet.</p>
-          )}
+            ))}
+          </div>
         </div>
 
         {/* Add to Cart Button */}

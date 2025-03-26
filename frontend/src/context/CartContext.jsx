@@ -1,17 +1,18 @@
 import React, { createContext, useContext, useState } from "react";
 
-const CartContext = createContext(); // ✅ Create context
+const CartContext = createContext();
 
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error("useCart must be used within a CartProvider"); // ✅ Helps debug issues
+    throw new Error("useCart must be used within a CartProvider");
   }
   return context;
 };
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false); // Sidebar state
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -24,6 +25,8 @@ export const CartProvider = ({ children }) => {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
+
+    setIsCartOpen(true); // Open the cart sidebar
   };
 
   const removeFromCart = (productId) => {
@@ -42,10 +45,10 @@ export const CartProvider = ({ children }) => {
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + (Number(item.price) || 0) * item.quantity, 0).toFixed(2);
-  };  
+  };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, getTotalPrice }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, getTotalPrice, isCartOpen, setIsCartOpen }}>
       {children}
     </CartContext.Provider>
   );
