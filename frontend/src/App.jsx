@@ -6,6 +6,7 @@ import ProductList from "./Components/ProductList";
 import CartSidebar from "./Components/SideCart";
 import About from "./Components/About"; 
 // import Footer from "./Components/Footer";  
+import Barcode from "./Components/BarcodeScanner";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ProductList />} />
             <Route path="/about" element={<About />} />
+            <Route path="/barcode" element={<Barcode />} />
           </Routes>
           <CartSidebar /> 
           {/* <Footer />  */}
