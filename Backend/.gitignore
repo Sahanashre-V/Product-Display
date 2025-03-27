@@ -1,2 +1,32 @@
-node_modules
+#  Ignore environment variables
 .env
+
+#  Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment (if using venv)
+venv/
+ENV/
+.venv/
+
+#  Ignore system files
+.DS_Store
+Thumbs.db
+
+#  Ignore log files
+*.log
+
+#  Ignore database dumps (if any)
+*.sqlite3
+*.db
+
+#  Ignore VS Code settings (if using VS Code)
+.vscode/
+
+#  Ignore dependency files (if using pipenv or poetry)
+Pipfile
+Pipfile.lock
+poetry.lock
