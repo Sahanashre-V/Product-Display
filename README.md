@@ -1,38 +1,49 @@
-# 🛒 **E-Commerce Web App**  
+# 🛒 **Product Display**
 
-This is a **React.js**-based e-commerce web application that allows users to browse products, view details in a modal, add products to their cart, and scan barcodes using **QuaggaJS**. The UI is styled with **Tailwind CSS**, and icons are from **React Icons** and **lucide-react**.  
+This is a **full-stack e-commerce application** built with **React.js** on the frontend and **Flask** on the backend. It allows users to browse products, view product details in a modal, add products to their cart, scan barcodes using **QuaggaJS**, and register or log in securely. The UI is styled using **Tailwind CSS**, and icons are provided by **React Icons** and **lucide-react**.
 
-## 🚀 **Features**  
+---
 
-### 1️⃣ **Product List Page**  
-✔️ Displays multiple products with images, names, brands, and prices.  
-✔️ Responsive design for both desktop and mobile.  
-✔️ Each product has an **"Add to Bag"** button.  
+## 🚀 **Features**
+
+### 🧑‍💻 **User Authentication (Backend)**
+✔️ User registration with secure password hashing  
+✔️ Login functionality using email and password  
+✔️ Passwords stored using `Werkzeug` hashing  
+✔️ MongoDB used for storing user data
+
+### 1️⃣ **Product List Page (Frontend)**  
+✔️ Displays multiple products with images, names, brands, and prices  
+✔️ Responsive for desktop and mobile  
+✔️ Each product has an **"Add to Bag"** button
 
 ### 2️⃣ **Product Detail View (Modal)**  
-✔️ Clicking a product opens a modal with:  
-   - Image, Name, Brand, and Price  
-   - Description and Customer Reviews  
-   - **"Add to Bag"** button  
+✔️ Modal shows image, name, brand, price, description, and reviews  
+✔️ Option to **Add to Bag**
 
 ### 3️⃣ **Shopping Cart (My Bag)**  
-✔️ Displays products added to the cart in a **side nav bar**.  
-✔️ Shows individual prices, total price, and allows **quantity adjustments**.  
-✔️ Option to **remove items** from the cart.  
+✔️ Side navbar to show added items  
+✔️ Quantity updates, total price display, and remove option
 
 ### 4️⃣ **Barcode Scanner**  
-✔️ Uses **QuaggaJS** for real-time barcode scanning.  
-✔️ Scanned products are **automatically added** to the cart.  
+✔️ Real-time scanning using **QuaggaJS**  
+✔️ Scanned items get auto-added to the cart
 
 ---
 
-## 🛠 **Tech Stack**  
+## 🛠 **Tech Stack**
 
-- **Frontend:** React.js, Tailwind CSS, React Icons, lucide-react  
-- **Barcode Scanner:** QuaggaJS  
-- **UI Libraries:** Tailwind CSS for consistent styling  
+### 🖥 **Frontend**
+- React.js  
+- Tailwind CSS  
+- React Icons & lucide-react  
+- QuaggaJS  
 
----
+### 🗄 **Backend**
+- Flask  
+- PyMongo  
+- MongoDB  
+- Werkzeug for password hashing
 
 ## 📌 **Setup & Installation**  
 
