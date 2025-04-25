@@ -1,4 +1,4 @@
-# 🛒 **Product Display**
+# 🛒 **BagItNow**
 
 This is a **full-stack e-commerce application** built with **React.js** on the frontend and **Flask** on the backend. It allows users to browse products, view product details in a modal, add products to their cart, scan barcodes using **QuaggaJS**, and register or log in securely. The UI is styled using **Tailwind CSS**, and icons are provided by **React Icons** and **lucide-react**.
 
